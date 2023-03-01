@@ -6,8 +6,8 @@ class MainBanner extends Component {
         return(
             <div className="main-banner">
                 <div className="main-banner__background">
-                    <div class="stars"></div>
-                    <div class="twinkling"></div>
+                    <div className="stars"></div>
+                    <div className="twinkling"></div>
                 </div>
                 <div className="main-banner__content">
                     <h1 className="main-banner__title">Hi, I'm <span className="main-banner__title--highlight">Hadleigh Bird</span></h1>
