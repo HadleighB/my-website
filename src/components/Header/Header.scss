@@ -1,0 +1,26 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    z-index: 10;
+    height: 105px;
+    transition: 300ms all;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+    &.header-scrolled {
+        background-color: black;
+    }
+
+    .header__logo {
+        text-decoration: none;
+
+        .website-logo {
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}
