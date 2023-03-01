@@ -84,3 +84,41 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .projects {
+        margin-right: 30px;
+        margin-left: 10px;
+        padding-top: 100px;
+        
+        .project {
+            img {
+                height: 300px;
+            }
+
+            .project-overlay,
+            .project-overlay .project-overlay-content {
+                position: relative;
+                top: unset;
+                left: unset;
+                height: fit-content;
+                width: unset;
+                transform: unset;
+                opacity: 1;
+                color: white;
+                background-color: transparent;
+
+                .plus {
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

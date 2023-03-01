@@ -12,7 +12,7 @@ class About extends Component {
             <div className="about">
                 <Container>
                     <Row>
-                        <Col xs="4" className="about-col__left">
+                        <Col xs="12" md="4" className="about-col__left">
                             <img src={Me} className="about-pfp" alt="Hadleigh Bird Picture" />
                             <h2 className="about-name">Hadleigh Bird</h2>
                             <p className="about-title">Website Developer</p>
@@ -34,7 +34,7 @@ class About extends Component {
                                 </li>
                             </ul>
                         </Col>
-                        <Col xs="8" className="about-col__right">
+                        <Col xs="12" md="8" className="about-col__right">
                             <h2>About Me</h2>
                             <p className="about-text">
                                 Hi! I'm Hadleigh.
@@ -47,7 +47,7 @@ class About extends Component {
                             </p>
 
                             <Row>
-                                <Col xs="5" className="about-col__right__interests">
+                                <Col xs="12" md="5" className="about-col__right__interests">
                                     <h3>Interests</h3>
                                     <ul className="about-interests">
                                         <li>Web Development</li>
@@ -56,7 +56,7 @@ class About extends Component {
                                         <li>Music</li>
                                     </ul>
                                 </Col>
-                                <Col xs="7" className="about-col__right__skills">
+                                <Col xs="12" md="7" className="about-col__right__skills">
                                     <h3>Skills</h3>
                                     <ul className="about-skills">
                                         <li>HTML</li>

@@ -17,7 +17,7 @@ class Projects extends Component {
                             <h4>More Coming Soon!</h4>
                         </div>
 
-                        <Col xs="6">
+                        <Col xs="12" md="6">
                             <div className="project">
                                 <img src={WHG} alt="WHG Project Image" />
                                 <a href="https://www.whg.uk.com/" target="_blank">
@@ -31,7 +31,7 @@ class Projects extends Component {
                             </div>
                         </Col>
 
-                        <Col xs="6">
+                        <Col xs="12" md="6">
                             <div className="project">
                                 <img src={Elenzia} alt="Elenzia Project Image" />
                                 <a href="https://elenzia.com/" target="_blank">
@@ -45,7 +45,7 @@ class Projects extends Component {
                             </div>
                         </Col>
 
-                        <Col xs="6">
+                        <Col xs="12" md="6">
                             <div className="project">
                                 <img src={Bryt} alt="Bryt Energy Project Image" />
                                 <a href="https://www.brytenergy.co.uk/" target="_blank">

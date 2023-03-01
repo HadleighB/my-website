@@ -1,9 +1,17 @@
-import React from "react";
+import React, { Component, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import './Navigation.scss';
+import BurgerMenu from '../../img/burger-menu.svg';
+import CloseMenu from '../../img/cross.svg';
 
-class Navigation extends React.Component {
-  render() {
+const Navigation = (props) => {
+
+    const [isActive, setActive] = useState("false");
+
+    const toggleClass = () => {
+        setActive(!isActive);
+    };
+
     let pages = ['Home', 'About Me', 'Projects'];
     let menuItems = [];
 
@@ -28,13 +36,17 @@ class Navigation extends React.Component {
     return (
         <div className="navigation">
             <Router>
-                <ul className="menu">
+                <ul className={isActive ? 'menu' : 'menu mobile-active'}>
                     {menuItems}
                 </ul>
             </Router>
+            <div className={isActive ? 'burger-menu' : 'burger-menu mobile-active'} onClick={toggleClass}>
+                <img className="open" src={BurgerMenu} alt="Burger Menu" />
+                <img className="close" src={CloseMenu} alt="Close Menu" />
+            </div>
         </div>
     );
-  }
+    
 }
 
 export default Navigation;

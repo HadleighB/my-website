@@ -72,3 +72,24 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .main-banner {
+        .main-banner__content {
+            width: 65vw;
+            
+            .main-banner__title {
+                font-size: 40px;
+            }
+
+            .main-banner__text {
+                font-size: 20px;
+            }
+
+            .main-banner__button {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
+        }
+    }
+}
