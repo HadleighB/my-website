@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Header from './components/Header/Header';
@@ -22,6 +22,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    document.title = 'Hadleigh Bird | Web Developer';
+    document.description = 'Hadleigh Bird is a Web Developer based in Birmingham, UK.'
+  }, []);
+
   return (
     <div className="main">
 
