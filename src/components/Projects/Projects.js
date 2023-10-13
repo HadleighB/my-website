@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Projects.scss";
 import WHG from "../../img/projects/whg.png";
-import Bryt from "../../img/projects/bryt.png";
 import Elenzia from "../../img/projects/elenzia.png";
 
 class Projects extends Component {
@@ -45,19 +44,6 @@ class Projects extends Component {
                             </div>
                         </Col>
 
-                        <Col xs="12" md="6">
-                            <div className="project">
-                                <img src={Bryt} alt="Bryt Energy Project Image" />
-                                <a href="https://www.brytenergy.co.uk/" target="_blank">
-                                    <div class="project-overlay">
-                                        <div class="project-overlay-content">
-                                            <h3>Bryt Energy</h3>
-                                            <p class="plus"></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </Col>
                     </Row>
                 </Container>
             </div>
